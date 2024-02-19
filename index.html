@@ -1,89 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <style>
+    body {
+        width: 99%;
+        margin: 12px auto; /* Center the body horizontally */
+        box-sizing: border-box;
+    }
+    form {
+        border: 1px solid #000; 
+        padding: 20px; 
+        width: 97%; /* Use 100% width to match the body width */
+        max-width: 98%; /* Set a maximum width for better readability on larger screens */
+        margin: auto; 
+        position: relative; 
+    }
+
+    form::before {
+        content:"Personal Details"; 
+        position: absolute;
+        top: -10px; 
+        left: 1%; 
+        background-color: white; 
+        padding: 0 10px; 
+    }
+    </style>
 </head>
 <body>
-    <label>Personal details</label><br>
-    <br>
-
-
-    <label>Firstname:</label>
-    <input type="text"><br>
-    <br>
-
-    <label>Middlname:</label>
-    <input type="text"><br>
-    <br>
-
-    <label>Lastname:</label>
-    <input type="text"><br>
-    <br>
-
-    <label>Course:</label>
-    <select>
-        <option value="none">Course</option>
-        <option value="bca">BCA</option>
-        <option value="bba">BBA</option>
-        <option value="b.tech">B.Tech</option>
-        <option value="mba">MBA</option>
-        <option value="mca">MCA</option>
-        <option value="m.tech">M.Tech</option>
-    </select><br>
-    <br>
-
-    <label>Gender:</label><br>
-    <input type="radio" name="abu">Male <br>
-    <input type="radio" name="abu">Female <br>
-    <input type="radio" name="abu">Other <br>
-    <br>
-
-    <label>DOB:</label>
-    <input type="datetime-local"><br>
-
-    <label>Phone</label>
-    <input type="number"><br>
-    <br>
-
-    <label>Address:</label><br>
-    <textarea cols="80" rows="5"></textarea><br>
-    <br>
-
-    <label>Email:</label>
-    <input type="email"><br>
-    <br>
-    <br>
-
-    <label>Password:</label>
-    <input type="password"><br>
-    <br>
-    <br>
-
-    <label>Re-type Password:</label>
-    <input type="password"><br>
-    <br>
-    <br>
-
-    <input type="checkbox" name="abu">
-    <label>Agree to terms and conditions</label><br>
-    <br>
-
-    <label>Choose File</label>
-    <input type="file"><br>
-    <br>
-    
-    
-    <label>Choose Colour</label>
-    <input type="color"><br>
-    <br>
-
-    
-    <button type="reset">Reset</button>
-    <button type="submit">Submit</button>
-    
-
-
-
-
+    <form>
+        <!-- Your form content here -->
+       
+        <label>Firstname </label><input type="text"><br><br>
+        <label>Middlename: </label><input type="text"><br><br>
+        <label>Lastname: </label><input type="text"><br><br>
+        <label>Course : </label>
+        <select>
+            <option value="Course">Course</option>
+            <option value="bca">BCA</option>
+            <option value="bba">BBA</option>
+            <option value="b.tech">B.Tech</option>
+            <option value="mba">MBA</option>
+            <option value="mca">MCA</option>
+            <option value="m.tech">M.Tech</option>
+        </select><br><br>
+        <label>Gender : </label><br>
+        <input type="radio" name="gen" value="m">Male <br>
+        <input type="radio" name="gen" value="f">Female <br>
+        <input type="radio" name="gen" value="o">Other <br><br>
+        <label>DOB </label><input type="datetime-local"><br>
+        <label>Phone: </label><input type="number"><br><br>
+        <label>Address</label><br>
+        <textarea name="" id="" cols="80" rows="5"></textarea><br><br><br>
+        <label>Email: </label><input type="email"><br><br><br>
+        <label>Password: </label><input type="password"><br><br><br>
+        <label>Re-type password: </label><input type="password"><br><br>
+        <input type="checkbox"><label>Agree to terms and conditions</label><br><br>
+        <label>Choose File </label><input type="file"><br><br>
+        <label>Choose color </label><input type="color"><br><br>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
